@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="logo">
+            <p>Think India NITP</p>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Welcome Message -->
+     <div class="wrapper">
+        <div class="about">
+            <article>
+                <h1>WELCOME TO THINK INDIA NITP</h1>
+                <img src="think india.jpeg">
+                <blockquote>
+                    Think India, is a forum for national students,researchers and alumni,in an ideation to bring together the best talents
+                    of the country for a developed and vibrant nation.<br>'Think India' is an initiative to bring together the best talents of
+                    the country and to infuse them a 'Nation First' attitude.<br>
+                    'Think India',is a clarion call to all those who beleive that they can make a difference to create a better society 
+                    and a better society and a better world.Welcome aboard <i>Think India</i>
+                </blockquote>
+                <a href="" class="hero-btn">Visit Us To Know More</a>
+            </article>
+        </div>
+     </div>
+
+<script> 
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
