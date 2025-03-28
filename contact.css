@@ -1,103 +1,133 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  nav{
-    width: 100%;
-    height: 75px;
-    background-color: #505d61;
-    line-height: 75px;
-    padding:0px 100px;
-    position: relative;
-    z-index: 1;
-  }
-  nav .logo{
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-  }
-  nav .logo p{
-    float: left;
-    color:#fff;
-    text-transform: uppercase;
-  }
-  nav ul {
-      float: right;
-  }
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #2c3e50, #1c2833);
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(90deg, #2c3e50, #1c2833);
+  line-height: 75px;
+  padding: 0 100px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav .logo p {
+  float: left;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li .active {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffcc00;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.location iframe {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact-col input, .contact-col textarea {
+  width: 60%;
+  padding: 15px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 2px solid #ffcc00;
+  background: #222;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  margin-left: 20%;
+}
+
+.send {
+  border: 2px solid #ffcc00;
+  padding: 12px 34px;
+  font-size: 16px;
+  background: transparent;
+  color: #ffcc00;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.send:hover {
+  background: #ffcc00;
+  color: #222;
+}
+
+/* Social Icons */
+.social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social i {
+  color: #ffcc00;
+  font-size: 30px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.social i:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
   
-  nav ul li {
-      display: inline-block;
-      list-style: none;
-  }
-  
-  nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      text-transform: uppercase;
-      padding: 0px 32px;
-  
-  }
-  nav ul li a:hover{
-    color: #c0d96f;
-  }
-  nav ul li .active{
-    color: #c0d96f;
-  }
-  h1{
-    font-size: 36px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: black;
-    margin-left: 700px;
-    margin-top: 50px;
-  }
-  .location{
-    width: 80%;
-    margin: auto;
-    padding: 80px 0;
-  }
-  .location iframe{
-    width: 100%;
-  }
-  .contact-col input, .contact-col textarea{
-    width: 50%;
-    padding:15px;
-    margin-bottom: 17px;
-    outline: none;
-    border: 1px solid #ccc;
-    margin-left: 300px;
-    box-sizing: border-box;
-    border-width: 5px;
-    border-color: tomato;
-  }
-  .send {
-    border: 5px solid tomato;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    margin-left: 600px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-  }
-  .send:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
-    transition: 1s;
-  }
-  .social{
-    margin-top: 40px 40px;
-  }
-  .social i{
-    color:#a52a2a;
-    font-size: 30px;
-    padding: 0px 10px;
-  }
-  .social i:hover{
-    color: #3d3d3d;
-  }
+
